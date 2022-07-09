@@ -34,5 +34,15 @@ if (honor_roles[0] && honor_roles[1] && honor_roles[2]) {
 }
 
 student_names.push(`James`);
-student_gpas.push(1);
+student_gpas.push(4);
 honor_roles.push(true);
+
+let last_student = student_names.pop();
+let last_student_gpa = student_gpas.pop();
+let last_student_honor = honor_roles.pop();
+
+if ((last_student_gpa > student_gpas[0]) || (last_student_gpa > student_gpas[1]) || (last_student_gpa > student_gpas[2]) || (last_student_gpa > student_gpas[3])) {
+    console.log("Last student is the best student.")
+} else {
+    console.log("Last student is not the best student.")
+}
